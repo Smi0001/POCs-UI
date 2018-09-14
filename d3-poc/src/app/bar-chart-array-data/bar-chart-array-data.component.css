@@ -1,0 +1,14 @@
+svg {
+    margin: 200px 75px;
+}
+
+svg rect {
+    fill: grey;
+}
+ 
+svg text {
+    fill: yellow;
+    font: 12px sans-serif;
+    text-anchor: end;
+}
+
