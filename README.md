@@ -1,2 +1,2 @@
 # POC
-Proof of concepts, implementations in code
+Proof of concepts, implementations in code, UI features
