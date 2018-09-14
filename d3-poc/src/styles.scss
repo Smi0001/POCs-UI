@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+app-bar-chart {
+    .bar {
+        fill: green;
+    }
+    
+    .highlight {
+        fill: red;
+    }
+    
+    .title {
+        fill: blue;
+        font-weight: bold;
+    }
+}
+
+app-bar-chart-array-data{
+    svg {
+        margin: 200px 75px;
+    }
+    
+    svg rect {
+        fill: grey;
+    }
+     
+    svg text {
+        fill: yellow;
+        font: 12px sans-serif;
+        text-anchor: end;
+    } 
+}
