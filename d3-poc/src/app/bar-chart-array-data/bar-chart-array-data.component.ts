@@ -16,8 +16,9 @@ export class BarChartArrayDataComponent implements OnInit {
     const width = 300,
       scaleFactor = 20,
       barHeight = 30;
-    const graph = d3.select('app-bar-chart-array-data')
-      .append('svg')
+    // const svg = d3.select('app-pie-chart > svg.pie-chart');
+    const graph = d3.select('app-bar-chart-array-data > svg.bar-chart-array')
+      // .append('svg')
       .attr('width', width)
       .attr('height', barHeight * _component.data.length);
     const bar = graph.selectAll('g')
@@ -32,10 +33,16 @@ export class BarChartArrayDataComponent implements OnInit {
     })
     .attr('height', barHeight - 1);
     bar.append('text')
-      .attr('x', function(d) { return (d * scaleFactor); })
+      .attr('x', function(d) { return ((d * scaleFactor) - 10); })
       .attr('y', barHeight / 2)
       .attr('dy', '.35em')
       .text(function(d) { return d; });
+
+      console.log(graph.size());
+    graph.append('g')
+        .attr('transform', 'translate(' + (250) + ',' + (150) + ')')
+        .append('text').text('Bar Chart using Array data')
+        .attr('class', 'title');
   }
 
 }
