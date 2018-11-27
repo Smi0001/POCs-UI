@@ -1,0 +1,3 @@
+[submodule "vue-demo-app"]
+	path = vue-demo-app
+	url = git@github.com:Smi0001/vue-demo-app.git

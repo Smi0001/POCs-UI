@@ -4,10 +4,14 @@
 /d3-poc/dist
 /d3-poc/tmp
 /d3-poc/out-tsc
+/vue-demo-app/dist
+
 
 # dependencies
 /node_modules
 /d3-poc/node_modules
+/vue-demo-app/node_modules
+/vue-demo-app/public
 
 
 # IDEs and editors
